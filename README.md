@@ -52,3 +52,4 @@ git clone https://github.com/naty180482/ecommerce-frontend-m2.git
 cd ecommerce-frontend-m2
 start index.html  # Windows
 open index.html   # Mac"# ecommerce-frontend-m2" 
+"# ecommerce-frontend-m2" 
