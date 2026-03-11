@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galactic Gadgets | Carrito</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Header con Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="https://cdn-icons-png.flaticon.com/512/483/483345.png" alt="Logo" width="30" height="30" class="d-inline-block align-top">
+                    🚀 Galactic Gadgets
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="carrito.html">
+                                🛒 Carrito 
+                                <span class="badge bg-primary" id="contador-carrito">0</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container py-5">
+            <h1 class="mb-4">🛍️ Tu Carrito</h1>
+            
+            <div class="row">
+                <div class="col-lg-8">
+                    <!-- Lista de productos en carrito -->
+                    <div class="card mb-3">
+                        <div class="card-body" id="carrito-vacio" style="display: none;">
+                            <p class="text-center mb-0">Tu carrito está vacío</p>
+                        </div>
+                        <div id="carrito-contenido">
+                            <!-- Los items del carrito se cargan dinámicamente -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <!-- Resumen del pedido -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0">Resumen del pedido</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="d-flex justify-content-between">
+                                <span>Subtotal:</span>
+                                <span id="subtotal">$0</span>
+                            </p>
+                            <p class="d-flex justify-content-between">
+                                <span>Envío:</span>
+                                <span id="envio">$10</span>
+                            </p>
+                            <hr>
+                            <p class="d-flex justify-content-between fw-bold">
+                                <span>Total:</span>
+                                <span id="total">$10</span>
+                            </p>
+                            <button class="btn btn-success w-100" onclick="alert('¡Gracias por tu compra! 🚀')">
+                                Finalizar compra
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Galactic Gadgets</h5>
+                    <p>Tu tienda de confianza en la galaxia desde 2024</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Enlaces rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white text-decoration-none">Inicio</a></li>
+                        <li><a href="carrito.html" class="text-white text-decoration-none">Carrito</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <p>📞 +1 (555) 123-4567<br>
+                    📍 Nebulosa de Orión, Sector 7<br>
+                    ✉️ hola@galacticgadgets.space</p>
+                </div>
+            </div>
+            <hr class="my-3">
+            <div class="text-center">
+                <small>&copy; 2024 Galactic Gadgets - Todos los derechos reservados</small>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
